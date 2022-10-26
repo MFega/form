@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* ### Primary
+
+- Red: hsl(0, 100%, 74%) 
+- Green: hsl(154, 59%, 51%)
+
+### Accent
+
+- Blue: hsl(248, 32%, 49%)
+
+### Neutral
+
+- Dark Blue: hsl(249, 10%, 26%) 
+- Grayish Blue: hsl(246, 25%, 77%) */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ 
+body{
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    /* height: 100vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: hsl(0, 100%, 74%) ; */
+    background:  hsl(0, 100%, 70%);
+}
+
+.container{
+    margin: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.learn{
+    color: white;
+}
+
+.learn p{
+    width: 90%;
+    margin: 20px auto;
+    line-height: 25px;
+}
+
+.forms{
+   
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    margin: 15px 0;
+    padding: 10px;
+}
+
+.button-1{
+    border: none;
+    padding: 15px;
+    color: white;
+    border-radius: 10px;
+    background: hsl(248, 32%, 49%);
+    margin: 15px 0;font-size: 16px;
+}
+
+.try{
+    font-weight: 600;
+}
+
+::placeholder{
+    color: hsl(249, 10%, 26%);
+    font-weight: 600;
+}
+
+.button-2{
+    font-size: 16px;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-weight: 600;
+    background: hsl(154, 59%, 51%);
+    border-radius: 10px;
+}
+
+.form p{
+    margin: 10px 0;
+    color: hsl(246, 25%, 77%) ;
+}
+
+.terms{
+    color: hsl(0, 100%, 70%);
+    font-weight: 600;
+}
+
+
+@media screen and (min-width:768px){
+    body{
+        background:linear-gradient(hsl(0, 100%, 70%,0.2),hsl(0, 100%, 70%,0.2)) url("./intro-component-with-signup-form-master/images/bg-intro-desktop.png");
+    }
+    
+    .container{
+        margin: 70px;
+flex-direction: row;
+    }
+
+    .learn{
+        text-align: left;
+    }
+
+    .learn h1{
+        font-size: 35px;
+    }
+
+    .learn p{
+        margin: none;
+        width: 100%;
+    }
+
+    .forms{
+        padding: 25px 35px 25px;
+        width: 500px;
+        margin-left: 40px;
+    }
+
+    .button-1{
+        width: 500px;
+        transform: translateX(20px);
+    }
+}
